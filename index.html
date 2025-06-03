@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li><a href="#catalog" class="nav-link" onclick="showPage('catalog')">Katalog</a></li>
+                <li><a href="#about" class="nav-link" onclick="showPage('about')">Tentang</a></li>
+                <li><a href="#contact" class="nav-link" onclick="showPage('contact')">Kontak</a></li>
+                <li><a href="#signup" class="nav-link" onclick="showPage('signup')">Sign/up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Home Page -->
+        <div id="home" class="page-content active">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Selamat Datang di Perpustakaan Online</h1>
+                    <p>Temukan ribuan koleksi buku digital dan fisik dalam satu platform. Nikmati kemudahan membaca dan meminjam buku kapan saja, di mana saja.</p>
+                    <button class="btn-primary" onclick="showPage('catalog')">Jelajahi Katalog</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1568667256549-094345857637?q=80&w=1315&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Perpustakaan">
+                </div>
+            </section>
+        </div>
+
+        <!-- Catalog Page -->
+        <div id="catalog" class="page-content">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Katalog Buku</h2>
+            <div class="catalog-grid">
+                <div class="book-card">
+                    <h3>Laskar Pelangi</h3>
+                    <p><strong>Penulis:</strong> Andrea Hirata</p>
+                    <p><strong>Genre:</strong> Fiksi, Drama</p>
+                    <p>Novel yang menceritakan kisah perjuangan anak-anak Belitung dalam menempuh pendidikan...</p>
+                    <span class="book-status available">Tersedia</span>
+                </div>
+                <div class="book-card">
+                    <h3>Bumi Manusia</h3>
+                    <p><strong>Penulis:</strong> Pramoedya Ananta Toer</p>
+                    <p><strong>Genre:</strong> Sejarah, Fiksi</p>
+                    <p>Novel klasik Indonesia yang mengisahkan kehidupan di masa kolonial Belanda...</p>
+                    <span class="book-status borrowed">Dipinjam</span>
+                </div>
+                <div class="book-card">
+                    <h3>Negeri 5 Menara</h3>
+                    <p><strong>Penulis:</strong> Ahmad Fuadi</p>
+                    <p><strong>Genre:</strong> Inspiratif, Biografi</p>
+                    <p>Kisah inspiratif tentang perjuangan menempuh pendidikan di pesantren...</p>
+                    <span class="book-status available">Tersedia</span>
+                </div>
+                <div class="book-card">
+                    <h3>Ayat-Ayat Cinta</h3>
+                    <p><strong>Penulis:</strong> Habiburrahman El Shirazy</p>
+                    <p><strong>Genre:</strong> Religi, Romance</p>
+                    <p>Novel yang mengisahkan perjalanan spiritual dan cinta seorang mahasiswa Indonesia di Mesir...</p>
+                    <span class="book-status available">Tersedia</span>
+                </div>
+                <div class="book-card">
+                    <h3>Ronggeng Dukuh Paruk</h3>
+                    <p><strong>Penulis:</strong> Ahmad Tohari</p>
+                    <p><strong>Genre:</strong> Budaya, Fiksi</p>
+                    <p>Trilogi yang mengangkat tradisi ronggeng dan kehidupan masyarakat Jawa...</p>
+                    <span class="book-status borrowed">Dipinjam</span>
+                </div>
+                <div class="book-card">
+                    <h3>Perahu Kertas</h3>
+                    <p><strong>Penulis:</strong> Dee Lestari</p>
+                    <p><strong>Genre:</strong> Romance, Drama</p>
+                    <p>Kisah cinta yang dimulai dari pertemuan di kereta dan berlanjut melalui perahu kertas...</p>
+                    <span class="book-status available">Tersedia</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page-content">
+            <div class="about-content">
+                <h2>Tentang Perpustakaan Online</h2>
+                <p>Perpustakaan Online adalah platform digital yang menyediakan akses mudah ke ribuan koleksi buku dan sumber daya pembelajaran. Kami berkomitmen untuk mendukung pendidikan dan literasi masyarakat Indonesia.</p>
+                <p>Dengan teknologi modern dan antarmuka yang user-friendly, kami membuat membaca dan belajar menjadi lebih menyenangkan dan accessible bagi semua kalangan.</p>
+                
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Koleksi Lengkap</h3>
+                        <p>Ribuan buku dari berbagai genre dan kategori tersedia untuk Anda</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3>Pencarian Mudah</h3>
+                        <p>Sistem pencarian canggih untuk menemukan buku yang Anda inginkan</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Akses Mobile</h3>
+                        <p>Baca buku favorit Anda kapan saja melalui smartphone atau tablet</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Kualitas Terjamin</h3>
+                        <p>Semua buku telah diverifikasi dan berkualitas tinggi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page-content">
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Hubungi Kami</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <select id="subject" name="subject">
+                            <option value="">Pilih Subjek</option>
+                            <option value="pertanyaan">Pertanyaan Umum</option>
+                            <option value="keluhan">Keluhan</option>
+                            <option value="saran">Saran</option>
+                            <option value="bantuan">Bantuan Teknis</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sign Up Page -->
+        <div id="signup" class="page-content">
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">Daftar Akun Baru</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="fullname">Nama Lengkap</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Konfirmasi Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="member-type">Jenis Keanggotaan</label>
+                        <select id="member-type" name="member-type">
+                            <option value="student">Mahasiswa</option>
+                            <option value="teacher">Guru/Dosen</option>
+                            <option value="public">Umum</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Daftar Sekarang</button>
+                </form>
+                <p style="text-align: center; margin-top: 1rem; color: #666;">
+                    Sudah punya akun? <a href="#" style="color: #007bff;">Masuk di sini</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perpustakaan Online. Semua hak cipta dilindungi.</p>
+        <p>Mendukung literasi untuk Indonesia yang lebih cerdas</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
